@@ -184,8 +184,13 @@ public class Main {
                 case 2:
                     Helpers.HelperImpresion.ImprimirInfo(listaPersona);
                     break;
+                    
                 case 3:
-                    Helpers.HelperImpresion.BuscarPersona(idPer, listaPersona);
+                    scan.nextLine();
+                    
+                    System.out.println("Digite el ID de la persona a buscar");
+                    String idbuscado =scan.nextLine();
+                    Helpers.HelperImpresion.BuscarPersona(idbuscado, listaPersona);
                     
                     break;
                 case 4:
